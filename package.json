@@ -1,0 +1,23 @@
+{
+  "name": "dom-builder",
+  "version": "1.0.0",
+  "description": "A sandbox HTML & CSS element builder",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikallwilsonn/dom-builder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikallwilsonn/dom-builder/issues"
+  },
+  "homepage": "https://github.com/mikallwilsonn/dom-builder#readme",
+  "devDependencies": {
+    "electron": "^2.0.2"
+  }
+}
