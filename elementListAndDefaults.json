@@ -1,0 +1,16 @@
+[
+    {
+        "element": "&lt;a&gt;&lt;/a&gt;",
+        "openTag": "<a>",
+        "closingTag": "</a>",
+        "defaultText": "This is an anchor tag.",
+        "info": "The <a> tag defines a hyperlink, which is used to link from one page to another." 
+    },
+    {
+        "element": "&lt;abbr&gt;&lt;/abbr&gt;",
+        "openTag": "<abbr>",
+        "closingTag": "</abbr>",
+        "defaultText": "Here is an abbreviation.",
+        "info": "The <abbr> tag defines an abbreviation or an acronym, like 'Mr.', 'Dec.', 'ASAP', 'ATM'." 
+    }
+]

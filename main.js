@@ -4,8 +4,14 @@ const { app, BrowserWindow } = require( 'electron' );
 
 function createWindow() {
     win = new BrowserWindow({
-        width: 800,
-        height: 600
+        width: 1250,
+        minWidth: 1000,
+        height: 750,
+        minHeight: 500,
+        show: true,
+        fullscreen: false,
+        maximizable: true,
+        resizable: true
     });
 
     win.loadFile( 'index.html' );
@@ -18,8 +24,8 @@ function createWindow() {
 
 }
 
-app.on( 'ready', createWindow );
 
+app.on( 'ready', createWindow );
 app.on( 'activate', () => {
     if ( win === null ) {
         createWindow();
