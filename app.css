@@ -1,0 +1,166 @@
+/* ---- Styles for DOM Builder App ---- */
+/* ------------------------------------ */
+
+/* -- CSS Variables -- */
+:root {
+    /* - Colors - */
+    --dark-color: rgba(50,50,50,1);
+    --panel-grey: #DDD;
+
+    /* - Structure - */
+    --panel-padding: 10px;
+    --code-padding: 20px;
+}
+
+
+/* -- 1 -- */
+/* -- Global App Styles -- */
+html, body, #app_wrapper {
+    width:100%;
+    min-width:100%;
+    max-width:100%;
+
+    height:100%;
+    min-height:100%;
+    max-height:100%;
+
+    margin:0 !important;
+    padding:0 !important;
+}
+
+#app_wrapper {
+    display:flex;
+    flex-direction:row;
+}
+
+section { box-sizing:border-box !important; }
+
+
+/* -- 2 -- */
+/* -- Left Pane: Element List -- */
+#element_list {
+    height:100%;
+    width:20%;
+    max-width:275px;
+    background-color: var(--panel-grey);
+    padding: var(--panel-padding);
+}
+
+#element_list ul {
+    list-style:none;
+    padding:0;
+}
+
+#element_list ul li {
+    width:100%;
+    overflow:hidden;
+    box-shadow:0px 0px 3px 2px rgba(0,0,0,0.05);
+    box-sizing:border-box;
+    text-align:center;
+    border-radius:3px;
+    margin-top:5px;
+}
+
+#element_list ul li button {
+    padding:10px;
+    height:100%;
+    width:100%;
+    background-color:#FFF;
+    border:none;
+}
+
+#element_list ul li button:hover {
+    cursor:pointer;
+}
+
+#element_list form {
+    width:100%;
+    text-align:center;
+}
+
+#element_list form input {
+    width:90%;
+    margin:auto;
+    padding:10px;
+    border-radius:3px;
+    border:none !important;
+}
+
+#element_list form input:focus,
+#element_list form input:active { outline: none !important; }
+
+
+/* -- 3 -- */
+/* -- Center Pane: Element Artboard & Code -- */
+#element_artboard {
+    display:flex;
+    flex-direction:column;
+    height:100%;
+    width: 60%;
+}
+
+#the_artboard {
+    width: 100%;
+    height: 70%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+}
+
+#the_code {
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    height:30%;
+    background-color: var(--dark-color);
+}
+
+#the_code div h3 {
+    text-transform:uppercase;
+    font-size:0.6em;
+    font-weight:bold;
+    letter-spacing:1px;
+    color: #FFF;
+    padding:0 0 5px 0;
+    margin:0;
+    border-bottom:1px solid rgba(255,255,255,0.05);
+}
+
+#the_code--html,
+#the_code--css { 
+    width:50%; 
+    box-sizing: border-box;
+    padding: var(--code-padding);
+}
+
+#the_code--html {
+    border-right:1px solid rgba(255,255,255,0.1);
+}
+#the_code--css {
+    border-left:1px solid rgba(255,255,255,0.1);
+}
+
+.the_code--code {
+    height:auto;
+    width:100%;
+    overflow-y: scroll;
+    overflow-x: wrap;
+    height: calc(100% - 100px);
+    color:#FFF;
+}
+
+.the_code--code:hover {
+    cursor: text;
+}
+
+
+/* -- 4 -- */
+/* -- Right Pane: Element Artboard & Code -- */
+#element_properties {
+    height:100%;
+    width:20%;
+    background-color: var(--panel-grey);
+    padding: var(--panel-padding);
+    max-width:275px;
+}

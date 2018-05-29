@@ -4,10 +4,10 @@ const { app, BrowserWindow } = require( 'electron' );
 
 function createWindow() {
     win = new BrowserWindow({
-        width: 900,
-        minWidth: 900,
-        height: 605,
-        minHeight: 605,
+        width: 1250,
+        minWidth: 1000,
+        height: 750,
+        minHeight: 500,
         show: true,
         fullscreen: false,
         maximizable: true,
@@ -23,7 +23,6 @@ function createWindow() {
     });
 
 }
-
 
 
 app.on( 'ready', createWindow );
