@@ -1,0 +1,17 @@
+/* ----
+----------- Variables
+---- */
+
+:root {
+    --theme-black: rgb( 50, 50, 50 );
+    --theme-primary: #EEA428;
+
+}
+
+
+
+.text-theme-black { color: var(--theme-black); }
+.bg-theme-black { background-color: var(--theme-black); }
+
+.text-theme-primary { color: var(--theme-primary); }
+.bg-theme-primary { background-color: var(--theme-primary); }

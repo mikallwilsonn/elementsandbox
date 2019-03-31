@@ -1,3 +1,41 @@
 /* --------
 --------------- HTMentaL Styles 
 -------- */
+
+@import './variables.css';
+
+
+/* ----
+----------- Global 
+---- */
+body, #root {
+    height: 100vh !important;
+    min-height: 100vh !important;
+    max-height: 100vh !important;
+}
+
+#Sidebar, #ElementCanvas {
+    height: 100% !important;
+    min-height: 100% !important;
+    max-height: 100vh !important;
+}
+
+
+/* ----
+----------- Sidebar
+---- */
+#Sidebar {
+    overflow-x: hidden !important;
+    overflow-y: scroll !important;
+}
+
+.control-toggle {
+    text-transform: capitalize !important;
+}
+
+
+
+/* ----
+----------- ElementCanvas
+---- */
+#ElementCanvas {}
