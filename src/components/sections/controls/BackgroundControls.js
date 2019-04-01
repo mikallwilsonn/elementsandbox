@@ -15,7 +15,7 @@ import InputControl from '../../mixins/InputControl';
 // BackgroundControls
 const BackgroundControls = () => {
     return (
-        <ControlGroup name="background">
+        <ControlGroup name="background" label="Background">
 
             <ChoiceControl 
                 label="Background Attachment" 

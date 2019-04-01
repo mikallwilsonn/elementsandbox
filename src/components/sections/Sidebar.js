@@ -8,6 +8,7 @@ import React, { Component } from 'react';
 import ElementList from './ElementList';
 import BackgroundControls from './controls/BackgroundControls';
 import BorderControls from './controls/BorderControls';
+import BoxModelControls from './controls/BoxModelControls';
 
 
 // ----
@@ -29,6 +30,7 @@ class Sidebar extends Component {
 
                         <BackgroundControls     />
                         <BorderControls         />
+                        <BoxModelControls       />
 
                     </div>
                 </div>

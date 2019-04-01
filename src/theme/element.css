@@ -9,7 +9,7 @@
     --background-position: center center;
     --background-repeat: initial;
     --background-size: initial;
-
+    
 
     /* -- Border -- */
     --border-radius: 0px;
@@ -17,6 +17,10 @@
 
     /* -- Box Model -- */
     --padding: 10px;
+    --margin: 0px;
+    --display: inline-block;
+    --opacity: 1;
+    --position: initial;
     
 
     /* -- Filter -- */
@@ -59,6 +63,10 @@
     /* -- Box Model -- */
     padding: var(--padding);
     margin: var(--margin);
+    display: var(--display);
+    opacity: var(--opacity);
+    position: var(--position);
+
     
     /* -- Filters -- */
     filter: blur(var(--blur))
