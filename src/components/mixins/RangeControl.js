@@ -12,7 +12,7 @@ const RangeControl = ({ label, styleName, min = 0, max, step = 1, sizing, value 
             </label>
             <input 
                 type="range" 
-                className="form-control-range" 
+                className="form-control-range element-control" 
                 name={styleName}
                 id={styleName} 
                 defaultValue={value}

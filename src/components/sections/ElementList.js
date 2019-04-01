@@ -9,6 +9,31 @@ import elements from '../../data/elements';
 // ElementList
 class ElementList extends Component {
 
+    componentDidMount() {
+        const elementGenerator = document.querySelector( "#ElementGenerator" );
+        const elementCanvas = document.querySelector( "#ElementCanvas" );
+
+        elementGenerator.addEventListener( 'change', function(){
+            // Remove current element from page
+            let prevElement = document.querySelector( "#Element" );
+            prevElement.parentNode.removeChild( prevElement );
+
+            // Get value of select menu
+            const element = elementGenerator.options[ elementGenerator.selectedIndex ].value;
+
+            // Create new element and append it to the ElementCanvas
+            let newElement = document.createElement( element );
+            newElement.setAttribute( 'id', 'Element' );
+            elementCanvas.appendChild( newElement );
+
+            // After new element is appendeed set it's inner text
+            //let appendedElement = document.querySelector( "#Element" );
+            //appendedElement.innerText( 'Hey this is new' );
+
+        }, false );
+    }
+
+
     renderOptions() {
         return elements.map( element => {
             return (
@@ -22,8 +47,8 @@ class ElementList extends Component {
     render() {
         return (
             <div className="form-group">
-                <select className="form-control">
-                    <option disabled defaultValue>Choose An Element</option>
+                <select id="ElementGenerator" className="form-control">
+                    <option disabled defaultValue selected>Choose An Element</option>
                     {this.renderOptions()}
                 </select>
             </div>
