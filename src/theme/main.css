@@ -6,6 +6,11 @@
 @import './element.css';
 
 
+:root {
+    --canvas-background-color: #FFF;
+    --canvas-background-image: url( '' );
+}
+
 /* ----
 ----------- Global 
 ---- */
@@ -39,4 +44,7 @@ body, #root {
 /* ----
 ----------- ElementCanvas
 ---- */
-#ElementCanvas {}
+#ElementCanvas {
+    background-color: var( --canvas-background-color );
+    background-color: var( --canvas-background-image );
+}

@@ -45,43 +45,45 @@
 
 #Element {
     /* -- Background -- */
-    background-color: var(--background-color);
-    background-attachment: var(--background-attachment);
-    background-blend-mode: var(--background-blend-mode);
-    background-clip: var(--background-clip);
-    background-image: var(--background-image);
-    background-origin: var(--background-origin);
-    background-position: var(--background-position);
-    background-repeat: var(--background-repeat);
-    background-size: var(--background-size);
+    background-color: var( --background-color );
+    background-attachment: var( --background-attachment );
+    background-blend-mode: var( --background-blend-mode );
+    background-clip: var( --background-clip );
+    background-image: var( --background-image );
+    background-origin: var( --background-origin );
+    background-position: var( --background-position );
+    background-repeat: var( --background-repeat );
+    background-size: var( --background-size );
     
     
     /* -- Border -- */
-    border-radius: var(--border-radius);
+    border-radius: var( --border-radius );
 
 
     /* -- Box Model -- */
-    padding: var(--padding);
-    margin: var(--margin);
-    display: var(--display);
-    opacity: var(--opacity);
-    position: var(--position);
+    padding: var( --padding );
+    margin: var( --margin );
+    display: var( --display );
+    opacity: var( --opacity );
+    position: var( --position );
 
     
     /* -- Filters -- */
-    filter: blur(var(--blur))
-        brightness(var(--brightness))
-        contrast(var(--contrast))
-        grayscale(var(--grayscale))
-        hue-rotate(var(--hue-rotate))
-        invert(var(--invert))
-        opacity(var(--opacity))
-        saturate(var(--saturate))
-        sepia(var(--sepia));
+    filter: blur( var( --blur ))
+        brightness( var( --brightness ))
+        contrast( var( --contrast ))
+        grayscale( var( --grayscale ))
+        hue-rotate( var( --hue-rotate ))
+        invert( var( --invert ))
+        opacity( var( --opacity ))
+        saturate( var( --saturate ))
+        sepia( var( --sepia ));
 
 
     /* -- Transforms -- */
-    transform: rotate(var(--rotate))
-        rotateY(var(--rotate-y))
-        rotateX(var(--rotate-x));
+    transform: rotate( var( --rotate ))
+        rotateY( var( --rotate-y ))
+        rotateX( var( --rotate-x ));
+    
+    transition:0.1s;
 }
