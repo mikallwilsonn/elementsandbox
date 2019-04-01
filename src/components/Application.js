@@ -44,6 +44,14 @@ class Application extends Component {
             <div className="col-lg-12 h-100 d-flex row m-0 p-0">
                 <Sidebar        />
                 <ElementCanvas  />
+
+                <div className="alert alert-dark mobile-notice" role="alert">
+                    For the best experience, it is recommended to use this on desktop.
+
+                    <button type="button" className="close ml-3" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
             </div>
         );
     }
