@@ -11,9 +11,9 @@ class ControlGroup extends Component {
 
         return (
             <div className="card">
-                <div className="card-header" id={`${name}Heading`}>
-                    <h2 className="mb-0">
-                        <button className="btn btn-link control-toggle" type="button" data-toggle="collapse" data-target={`#${name}Controls`} aria-expanded="true" aria-controls={`${name}Controls`}>
+                <div className="card-header p-0 text-left" id={`${name}Heading`}>
+                    <h2 className="mb-0 p-0">
+                        <button className="btn btn-link control-toggle text-theme-black m-0 p-3 h-100 w-100 text-left" type="button" data-toggle="collapse" data-target={`#${name}Controls`} aria-expanded="true" aria-controls={`${name}Controls`}>
                             {label}
                         </button>
                     </h2>

@@ -34,9 +34,9 @@ class Sidebar extends Component {
                     
                     <div className="accordion" id="canvasSettings">
                         <div className="card">
-                            <div className="card-header" id="headingOne">
-                            <h2 className="mb-0">
-                                <button className="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <div className="card-header p-0 text-left" id="headingOne">
+                            <h2 className="mb-0 p-0">
+                                <button className="btn btn-link control-toggle text-theme-black m-0 p-3 h-100 w-100 text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                     Canvas Settings
                                 </button>
                             </h2>
