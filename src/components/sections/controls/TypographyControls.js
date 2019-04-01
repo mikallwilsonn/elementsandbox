@@ -33,6 +33,13 @@ const TypographyControls = () => {
 
 
             <ChoiceControl 
+                label="Font Family" 
+                styleName="font-family" 
+                options={['serif', 'sans-serif', 'monospace', 'cursive', 'fantasy']} 
+            />
+
+
+            <ChoiceControl 
                 label="Font Style" 
                 styleName="font-style" 
                 options={['normal', 'italic', 'oblique', 'initial', 'inherit']} 
@@ -80,6 +87,13 @@ const TypographyControls = () => {
                 styleName="word-spacing" 
                 help="Values calculated as px"
                 sizing="px"
+            />
+
+
+            <ChoiceControl 
+                label="Font Kerning" 
+                styleName="text-align" 
+                options={['auto', 'normal', 'none']} 
             />
 
 
