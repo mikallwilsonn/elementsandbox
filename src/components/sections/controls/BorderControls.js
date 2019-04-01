@@ -13,7 +13,7 @@ import RangeControl from '../../mixins/RangeControl';
 // BackgroundControls
 const BorderControls = () => {
     return (
-        <ControlGroup name="border">
+        <ControlGroup name="border" label="Border">
 
             <RangeControl 
                 label="Border Radius" 

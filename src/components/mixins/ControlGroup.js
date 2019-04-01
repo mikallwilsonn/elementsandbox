@@ -7,14 +7,14 @@ import React, { Component } from 'react';
 // BackgroundControls
 class ControlGroup extends Component {
     render() {
-        const { name } = this.props;
+        const { name, label } = this.props;
 
         return (
             <div className="card">
                 <div className="card-header" id={`${name}Heading`}>
                     <h2 className="mb-0">
                         <button className="btn btn-link control-toggle" type="button" data-toggle="collapse" data-target={`#${name}Controls`} aria-expanded="true" aria-controls={`${name}Controls`}>
-                            {name}
+                            {label}
                         </button>
                     </h2>
                 </div>
