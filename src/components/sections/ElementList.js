@@ -16,6 +16,7 @@ class ElementList extends Component {
         elementGenerator.addEventListener( 'change', function(){
             // Remove current element from page
             let prevElement = document.querySelector( "#Element" );
+            let prevElementText = prevElement.textContent;
             prevElement.parentNode.removeChild( prevElement );
 
             // Get value of select menu
@@ -27,8 +28,9 @@ class ElementList extends Component {
             elementCanvas.appendChild( newElement );
 
             // After new element is appendeed set it's inner text
-            //let appendedElement = document.querySelector( "#Element" );
-            //appendedElement.innerText( 'Hey this is new' );
+            let appendedElement = document.querySelector( "#Element" );
+            let text = document.querySelector( '#element-text-content' ).value;
+            appendedElement.textContent = text || prevElementText;
 
         }, false );
     }
@@ -47,6 +49,9 @@ class ElementList extends Component {
     render() {
         return (
             <div className="form-group">
+                <label htmlFor="ElementGenerator" className="text-theme-primary">
+                    Element to Customize
+                </label>
                 <select id="ElementGenerator" className="form-control">
                     <option disabled defaultValue selected>Choose An Element</option>
                     {this.renderOptions()}

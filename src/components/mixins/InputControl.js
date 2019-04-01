@@ -11,7 +11,7 @@ const InputControl = ({ label, styleName, help }) => {
                 {label}
             </label>
 
-            <input type="email" className="form-control element-control" id={styleName} name={styleName} aria-describedby={`${styleName}Help`} placeholder="" />
+            <input type="text" className="form-control element-control" id={styleName} name={styleName} aria-describedby={`${styleName}Help`} placeholder="" />
 
             {help ?
                 <small id={`${styleName}Help`} className="form-text text-muted mb-2">
