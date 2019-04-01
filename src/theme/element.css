@@ -62,6 +62,8 @@
     --letter-spacing: initial;
     --word-spacing: initial;
     --text-align: initial;
+    --font-family: initial;
+    --font-kerning: auto;
 
 }
 
@@ -130,5 +132,8 @@
     line-height: var( --line-height );
     letter-spacing: var( --letter-spacing );
     word-spacing: var( --word-spacing );
+    font-family: var( --font-family );
+    font-kerning: var( --font-kerning );
+
     transition:0.1s;
 }
