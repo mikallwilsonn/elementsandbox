@@ -1,0 +1,79 @@
+:root {
+    /* -- Background --*/
+    --background-attachment: initial;
+    --background-color: #FF404C;
+    --background-blend-mode: normal;
+    --background-clip: initial;
+    --background-image: url('');
+    --background-origin: initial;
+    --background-position: center center;
+    --background-repeat: initial;
+    --background-size: initial;
+
+
+    /* -- Border -- */
+    --border-radius: 0px;
+
+
+    /* -- Box Model -- */
+    --padding: 10px;
+    
+
+    /* -- Filter -- */
+    --blur: 0px;
+    --brightness: 1;
+    --contrast: 100%;
+    --grayscale: 0%;
+    --hue-rotate: 0deg;
+    --invert: 0%;
+    --opacity:100%;
+    --saturate:100%;
+    --sepia:0%;
+
+
+    /* -- Transform -- */
+    --rotate: 0deg;
+    --rotate-x: 0deg;
+    --rotate-y:0deg;
+
+}
+
+
+#Element {
+    /* -- Background -- */
+    background-color: var(--background-color);
+    background-attachment: var(--background-attachment);
+    background-blend-mode: var(--background-blend-mode);
+    background-clip: var(--background-clip);
+    background-image: var(--background-image);
+    background-origin: var(--background-origin);
+    background-position: var(--background-position);
+    background-repeat: var(--background-repeat);
+    background-size: var(--background-size);
+    
+    
+    /* -- Border -- */
+    border-radius: var(--border-radius);
+
+
+    /* -- Box Model -- */
+    padding: var(--padding);
+    margin: var(--margin);
+    
+    /* -- Filters -- */
+    filter: blur(var(--blur))
+        brightness(var(--brightness))
+        contrast(var(--contrast))
+        grayscale(var(--grayscale))
+        hue-rotate(var(--hue-rotate))
+        invert(var(--invert))
+        opacity(var(--opacity))
+        saturate(var(--saturate))
+        sepia(var(--sepia));
+
+
+    /* -- Transforms -- */
+    transform: rotate(var(--rotate))
+        rotateY(var(--rotate-y))
+        rotateX(var(--rotate-x));
+}

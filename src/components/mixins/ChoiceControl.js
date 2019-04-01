@@ -11,7 +11,7 @@ const ChoiceControl = ({ label, styleName, options, help }) => {
                 {label}
             </label>
             <select 
-                className="form-control" 
+                className="form-control element-control" 
                 name={styleName}
                 id={styleName}
             >
