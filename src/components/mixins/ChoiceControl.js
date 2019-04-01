@@ -15,7 +15,7 @@ const ChoiceControl = ({ label, styleName, options, help }) => {
                 name={styleName}
                 id={styleName}
             >
-                <option disabled defaultValue selected>none</option>
+                <option disabled defaultValue selected>Default / Initial</option>
                 {options.map( option => {
                     return (
                         <option 

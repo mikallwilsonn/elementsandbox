@@ -49,7 +49,7 @@ class Sidebar extends Component {
 
                                     <div className="form-group text-theme-primary mt-3">
                                         <label htmlFor="element-text-content">
-                                            Element Text Content
+                                            Text Content
                                         </label>
 
                                         <input type="text" className="form-control" id="element-text-content" name="element-text-content" aria-describedby="element-text-contentHelp" placeholder="" 
@@ -91,7 +91,7 @@ class Sidebar extends Component {
                     <br />
                     <h2 className="h6 text-theme-primary">Element Styles</h2>
 
-                    <div className="accordion" id="controls">
+                    <div className="accordion pb-5" id="controls">
 
                         <BackgroundControls     />
                         <BorderControls         />

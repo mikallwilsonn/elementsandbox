@@ -1,7 +1,7 @@
 :root {
     /* -- Background --*/
     --background-attachment: initial;
-    --background-color: #FF404C;
+    --background-color: #1F90F8;
     --background-blend-mode: normal;
     --background-clip: initial;
     --background-image: url('');
@@ -12,7 +12,15 @@
     
 
     /* -- Border -- */
+    --border-width: 0px;
+    --border-style: initial;
+    --boder-color: transparent;
     --border-radius: 0px;
+    --border-image-source: none;
+    --border-image-slice: initial;
+    --border-image-width: initial;
+    --border-image-outset: initial;
+    --border-image-repeat: initial;
 
 
     /* -- Box Model -- */
@@ -40,6 +48,10 @@
     --rotate-x: 0deg;
     --rotate-y:0deg;
 
+
+    /* -- Typography -- */
+    --color: #FFF;
+
 }
 
 
@@ -57,7 +69,15 @@
     
     
     /* -- Border -- */
+    border-width: var( --border-width );
+    border-style: var( --border-style );
+    border-color: var( --border-color );
     border-radius: var( --border-radius );
+    border-image-source: var( --border-image-source );
+    border-image-slice: var( --border-image-slice );
+    border-image-width: var( --border-image-width );
+    border-image-outset: var( --border-image-outset );
+    border-image-repeat: var( --border-image-repeat );
 
 
     /* -- Box Model -- */
@@ -84,6 +104,10 @@
     transform: rotate( var( --rotate ))
         rotateY( var( --rotate-y ))
         rotateX( var( --rotate-x ));
+
+
+    /* -- Typography -- */
+    color: var( --color );
     
     transition:0.1s;
 }
