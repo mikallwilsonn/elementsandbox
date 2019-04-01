@@ -25,18 +25,18 @@ class Sidebar extends Component {
         return (
             <section id="Sidebar" className="col-lg-3 m-0 p-2 bg-theme-black text-white">
                 <header className="text-center p-3">
-                    <h1 className="h3">HTMentaL</h1>
-                    <span className="text-muted">Created by <a href="https://github.com/mikallwilsonn/" target="_blank" rel="noopener noreferrer">Michael R. Wilson</a></span>
+                    <h1 className="h3">Markup Sandbox</h1>
+                    <span className="text-muted">Created by <a href="https://github.com/mikallwilsonn/" className="text-theme-primary" target="_blank" rel="noopener noreferrer">Michael R. Wilson</a></span>
                 </header>
 
                 <div className="col-lg-12 mt-5 d-flex flex-column">
 
                     
                     <div className="accordion" id="canvasSettings">
-                        <div className="card">
-                            <div className="card-header p-0 text-left" id="headingOne">
+                        <div className="card border-0">
+                            <div className="card-header p-0 text-left bg-secondary" id="headingOne">
                             <h2 className="mb-0 p-0">
-                                <button className="btn btn-link control-toggle text-theme-black m-0 p-3 h-100 w-100 text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <button className="btn btn-link control-toggle text-white m-0 p-3 h-100 w-100 text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                     Canvas Settings
                                 </button>
                             </h2>

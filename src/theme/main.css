@@ -26,6 +26,14 @@ body, #root {
     min-height: 100% !important;
 }
 
+.mobile-notice {
+    position:fixed;
+    z-index:9999;
+    right: 50px;
+    bottom:25px;
+    display: none;
+    transition:0.5s;
+}
 
 /* ----
 ----------- Sidebar
@@ -42,6 +50,14 @@ body, #root {
 }
 
 
+.card-header {
+    transition:0.5s;
+}
+
+.card-header:hover {
+    opacity:0.5;
+}
+
 
 /* ----
 ----------- ElementCanvas
@@ -50,3 +66,24 @@ body, #root {
     background-color: var( --canvas-background-color );
     background-image: var( --canvas-background-image );
 }
+
+
+
+/* ----
+----------- Responsive
+---- */
+
+/*
+@media ( max-width: 576px ) {}
+@media ( max-width: 768px ) {}
+*/
+
+@media ( max-width: 992px ) {
+    .mobile-notice {
+        display: inline-block;
+    }
+}
+
+/*
+@media ( max-width: 1200px ) {}
+*/
