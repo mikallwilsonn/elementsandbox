@@ -29,6 +29,9 @@
     --display: inline-block;
     --opacity: 1;
     --position: initial;
+    --height: initial;
+    --width: initial;
+    --box-sizing: initial;
     
 
     /* -- Filter -- */
@@ -51,6 +54,14 @@
 
     /* -- Typography -- */
     --color: #FFF;
+    --font-style: initial;
+    --font-variant: initial;
+    --font-weight: normal;
+    --font-size: initial;
+    --line-height: initial;
+    --letter-spacing: initial;
+    --word-spacing: initial;
+    --text-align: initial;
 
 }
 
@@ -86,6 +97,10 @@
     display: var( --display );
     opacity: var( --opacity );
     position: var( --position );
+    height: var( --height );
+    width: var( --width );
+    text-align: var( --text-align );
+    box-sizing: var( --box-sizing );
 
     
     /* -- Filters -- */
@@ -108,6 +123,12 @@
 
     /* -- Typography -- */
     color: var( --color );
-    
+    font-style: var( --font-style );
+    font-variant: var( --font-variant );
+    font-weight: var( --font-weight );
+    font-size: var( --font-size );
+    line-height: var( --line-height );
+    letter-spacing: var( --letter-spacing );
+    word-spacing: var( --word-spacing );
     transition:0.1s;
 }

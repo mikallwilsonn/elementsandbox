@@ -6,7 +6,7 @@ import React from 'react';
 // Control
 const InputControl = ({ label, styleName, help, sizing }) => {
     return (
-        <div className="form-group text-theme-primary mt-5">
+        <div className="form-group text-theme-primary mt-2 pt-1 pb-1">
             <label htmlFor={styleName}>
                 {label}
             </label>

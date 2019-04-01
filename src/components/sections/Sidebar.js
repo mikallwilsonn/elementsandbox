@@ -9,6 +9,7 @@ import ElementList from './ElementList';
 import BackgroundControls from './controls/BackgroundControls';
 import BorderControls from './controls/BorderControls';
 import BoxModelControls from './controls/BoxModelControls';
+import TypographyControls from './controls/TypographyControls';
 
 
 // ----
@@ -41,7 +42,7 @@ class Sidebar extends Component {
                             </h2>
                             </div>
 
-                            <div id="collapseOne" className="collapse show" aria-labelledby="headingOne" data-parent="#canvasSettings">
+                            <div id="collapseOne" className="collapse" aria-labelledby="headingOne" data-parent="#canvasSettings">
                                 <div className="card-body">
 
                                     <ElementList />
@@ -96,6 +97,7 @@ class Sidebar extends Component {
                         <BackgroundControls     />
                         <BorderControls         />
                         <BoxModelControls       />
+                        <TypographyControls     />
 
                     </div>
                 </div>

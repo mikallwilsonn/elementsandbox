@@ -6,7 +6,7 @@ import React from 'react';
 // Control
 const ChoiceControl = ({ label, styleName, options, help }) => {
     return (
-        <div className="form-group mt-4">
+        <div className="form-group mt-2 pt-1 pb-1">
             <label htmlFor={styleName} className="text-theme-primary">
                 {label}
             </label>
@@ -15,7 +15,10 @@ const ChoiceControl = ({ label, styleName, options, help }) => {
                 name={styleName}
                 id={styleName}
             >
-                <option disabled defaultValue selected>Default / Initial</option>
+                <option disabled defaultValue selected className="text-muted">
+                    Default / Initial
+                </option>
+
                 {options.map( option => {
                     return (
                         <option 
