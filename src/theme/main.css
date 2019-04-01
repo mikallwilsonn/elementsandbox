@@ -48,5 +48,5 @@ body, #root {
 ---- */
 #ElementCanvas {
     background-color: var( --canvas-background-color );
-    background-color: var( --canvas-background-image );
+    background-image: var( --canvas-background-image );
 }
