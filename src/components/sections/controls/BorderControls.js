@@ -35,7 +35,7 @@ const BorderControls = () => {
             <InputControl 
                 label="Border Color" 
                 styleName="border-color" 
-                help="Enter any valid CSS color value."
+                help="Enter any valid CSS color value. Will inherit font color if left empty."
             />
 
 

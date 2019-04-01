@@ -8,6 +8,7 @@ import React from 'react';
 import ControlGroup from '../../mixins/ControlGroup';
 import ChoiceControl from '../../mixins/ChoiceControl';
 import RangeControl from '../../mixins/RangeControl';
+import InputControl from '../../mixins/InputControl';
 
 
 // ----
@@ -24,6 +25,27 @@ const BoxModelControls = () => {
                             'table', 'table-caption', 'table-column-group', 'table-header-group',
                             'table-footer-group', 'table-row-group', 'table-cell', 'table-column',
                             'table-row', 'none', 'initial', 'inherit']} 
+            />
+
+            <ChoiceControl 
+                label="Box Sizing" 
+                styleName="boz-sizing" 
+                options={['content-box', 'border-box', 'initial', 'inherit']} 
+            />
+
+
+            <InputControl 
+                label="Height" 
+                styleName="height" 
+                help="Values calculated as px"
+                sizing="px"
+            />
+
+            <InputControl 
+                label="Width" 
+                styleName="width" 
+                help="Values calculated as px"
+                sizing="px"
             />
 
 

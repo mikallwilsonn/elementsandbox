@@ -6,7 +6,7 @@ import React from 'react';
 // Control
 const RangeControl = ({ label, styleName, min = 0, max, step = 1, sizing, value = 0, help }) => {
     return (
-        <div className="form-group mt-4">
+        <div className="form-group mt-2 pt-1 pb-1">
             <label htmlFor={styleName} className="text-theme-primary">
                 {label}
             </label>
