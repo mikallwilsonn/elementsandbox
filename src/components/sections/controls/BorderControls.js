@@ -7,9 +7,10 @@ import React from 'react';
 // Child Components
 import ControlGroup from '../../mixins/ControlGroup';
 import RangeControl from '../../mixins/RangeControl';
-import InputControl from '../../mixins/InputControl';
+// import InputControl from '../../mixins/InputControl';
 import ChoiceControl from '../../mixins/ChoiceControl';
 import ColorControl from '../../mixins/ColorControl';
+import ImageControl from '../../mixins/ImageControl';
 
 
 // ----
@@ -55,10 +56,10 @@ const BorderControls = () => {
             <div className="dropdown-divider mt-4 mb-4"></div>
 
 
-            <InputControl 
+            <ImageControl 
                 label="Border Image Source" 
                 styleName="border-image-source" 
-                help="Enter any valid image URL."
+                help="Enter a URL to your desired image and BE SURE to set a border width above too."
             />
 
 
