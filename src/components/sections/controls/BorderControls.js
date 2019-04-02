@@ -52,6 +52,9 @@ const BorderControls = () => {
             />
 
 
+            <div className="dropdown-divider mt-4 mb-4"></div>
+
+
             <InputControl 
                 label="Border Image Source" 
                 styleName="border-image-source" 

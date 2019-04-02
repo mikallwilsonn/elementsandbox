@@ -33,8 +33,11 @@ const TypographyControls = () => {
                 max="100" 
                 step="1"
                 sizing="px" 
-                value="0"
+                value="13"
             />
+
+
+            <div className="dropdown-divider mt-4 mb-4"></div>
 
 
             <ChoiceControl 
@@ -70,6 +73,9 @@ const TypographyControls = () => {
                 styleName="text-align" 
                 options={['left', 'right', 'center', 'justify', 'initial', 'inherit']} 
             />
+
+
+            <div className="dropdown-divider mt-4 mb-4"></div>
 
 
             <RangeControl 
