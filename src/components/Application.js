@@ -37,6 +37,7 @@ class Application extends Component {
         inputs.forEach( input => input.addEventListener( 'mouseup', function() {
             return;
         }));
+
     }
 
     render() {

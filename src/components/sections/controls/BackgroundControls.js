@@ -9,6 +9,7 @@ import ControlGroup from '../../mixins/ControlGroup';
 // import RangeControl from '../../mixins/RangeControl';
 import ChoiceControl from '../../mixins/ChoiceControl';
 import InputControl from '../../mixins/InputControl';
+import ColorControl from '../../mixins/ColorControl';
 
 
 // ----
@@ -35,10 +36,9 @@ const BackgroundControls = () => {
                 options={['border-box', 'padding-box', 'content-box', 'initial', 'inherit']} 
             />
 
-            <InputControl 
+            <ColorControl 
                 label="Background Color" 
                 styleName="background-color" 
-                help="Enter any valid CSS color value."
             />
 
             <InputControl 

@@ -8,7 +8,7 @@ import React from 'react';
 import ControlGroup from '../../mixins/ControlGroup';
 import ChoiceControl from '../../mixins/ChoiceControl';
 import RangeControl from '../../mixins/RangeControl';
-import InputControl from '../../mixins/InputControl';
+// import InputControl from '../../mixins/InputControl';
 
 
 // ----
@@ -39,10 +39,10 @@ const BoxModelControls = () => {
                 label="Height" 
                 styleName="height" 
                 min="0"
-                max="2500" 
+                max="100" 
                 step="1"
-                sizing="px" 
-                value="250"
+                sizing="%" 
+                value="10"
             />
 
 
@@ -50,10 +50,10 @@ const BoxModelControls = () => {
                 label="Width" 
                 styleName="width" 
                 min="0"
-                max="2500" 
+                max="100" 
                 step="1"
-                sizing="px" 
-                value="250"
+                sizing="%" 
+                value="10"
             />
 
 
