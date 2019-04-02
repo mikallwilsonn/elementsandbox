@@ -47,6 +47,25 @@
 
 
     /* -- Transform -- */
+    --text-shadow-horizontal: 0px;
+    --text-shadow-vertical: 0px;
+    --text-shadow-blur: 0px;
+    --text-shadow-color: #000;
+
+    --box-shadow-offset-x: 0px;
+    --box-shadow-offset-y: 0px;
+    --box-shadow-spread-radius: 0px;
+    --box-shadow-blur: 0px;
+    --box-shadow-color: #000;
+
+    --inset-box-shadow-offset-x: 0px;
+    --inset-box-shadow-offset-y: 0px;
+    --inset-box-shadow-spread-radius: 0px;
+    --inset-box-shadow-blur: 0px;
+    --inset-box-shadow-color: #000;
+
+
+    /* -- Transform -- */
     --rotate: 0deg;
     --rotate-x: 0deg;
     --rotate-y:0deg;
@@ -77,7 +96,10 @@
 
 #Element {
     /* -- Background -- */
-    background: var( --background-color) var( --background-image );
+    background: 
+        var( --background-color) 
+        var( --background-image );
+
     background-attachment: var( --background-attachment );
     background-blend-mode: var( --background-blend-mode );
     background-clip: var( --background-clip );
@@ -112,7 +134,8 @@
 
     
     /* -- Filters -- */
-    filter: blur( var( --blur ))
+    filter: 
+        blur( var( --blur ))
         brightness( var( --brightness ))
         contrast( var( --contrast ))
         grayscale( var( --grayscale ))
@@ -123,8 +146,30 @@
         sepia( var( --sepia ));
 
 
+    /* -- Shadow -- */
+    text-shadow: 
+        var( --text-shadow-horizontal )
+        var( --text-shadow-vertical ) 
+        var( --text-shadow-blur )
+        var( --text-shadow-color );
+    
+    box-shadow:
+        var( --box-shadow-offset-x )
+        var( --box-shadow-offset-y )
+        var( --box-shadow-blur )
+        var( --box-shadow-spread-radius )
+        var( --box-shadow-color ),
+        inset         
+        var( --inset-box-shadow-offset-x )
+        var( --inset-box-shadow-offset-y )
+        var( --inset-box-shadow-blur )
+        var( --inset-box-shadow-spread-radius )
+        var( --inset-box-shadow-color );
+
+
     /* -- Transforms -- */
-    transform: rotate( var( --rotate ))
+    transform: 
+        rotate( var( --rotate ))
         rotateY( var( --rotate-y ))
         rotateX( var( --rotate-x ))
         scale( var( --scale ))
@@ -133,7 +178,9 @@
         skewX( var( --skewX )) 
         skewY( var( --skewY ));
 
-    transform-origin: var( --transform-origin-x ) var( --transform-origin-y );
+    transform-origin: 
+        var( --transform-origin-x ) 
+        var( --transform-origin-y );
 
 
     /* -- Typography -- */

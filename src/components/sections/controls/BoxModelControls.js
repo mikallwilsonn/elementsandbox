@@ -35,6 +35,9 @@ const BoxModelControls = () => {
             />
 
 
+            <div className="dropdown-divider mt-4 mb-4"></div>
+
+
             <RangeControl 
                 label="Height" 
                 styleName="height" 
@@ -86,6 +89,9 @@ const BoxModelControls = () => {
                 sizing="px" 
                 value="0"
             />
+
+
+            <div className="dropdown-divider mt-4 mb-4"></div>
 
 
             <ChoiceControl 

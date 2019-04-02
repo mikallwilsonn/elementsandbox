@@ -17,6 +17,7 @@ import BoxModelControls from './controls/BoxModelControls';
 import TypographyControls from './controls/TypographyControls';
 import TransformControls from './controls/TransformControls';
 import EffectsControls from './controls/EffectsControls';
+import ShadowControls from './controls/ShadowControls';
 
 
 // ----
@@ -115,10 +116,11 @@ class Sidebar extends Component {
                         <BackgroundControls     />
                         <BorderControls         />
                         <BoxModelControls       />
-                        <TypographyControls     />
-                        <TransformControls      />
                         <EffectsControls        />
-
+                        <ShadowControls         />
+                        <TransformControls      />
+                        <TypographyControls     />
+                        
                     </div>
                 </div>
             </section>

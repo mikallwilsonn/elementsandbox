@@ -32,6 +32,9 @@ const TransformControls = () => {
             />
 
 
+            <div className="dropdown-divider mt-4 mb-4"></div>
+
+
             <RangeControl 
                 label="Scale" 
                 styleName="scale" 
@@ -40,6 +43,10 @@ const TransformControls = () => {
                 step="0.25"
                 value="0"
             />
+
+
+            <div className="dropdown-divider mt-4 mb-4"></div>
+
 
             <RangeControl 
                 label="Rotate" 
@@ -71,6 +78,10 @@ const TransformControls = () => {
                 value="0"
             />
 
+
+            <div className="dropdown-divider mt-4 mb-4"></div>
+
+
             <RangeControl 
                 label="Translate-X" 
                 styleName="translateX" 
@@ -90,6 +101,9 @@ const TransformControls = () => {
                 sizing="%" 
                 value="0"
             />  
+
+
+            <div className="dropdown-divider mt-4 mb-4"></div>
 
 
             <RangeControl 
