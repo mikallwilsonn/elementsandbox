@@ -65,6 +65,7 @@ body, #root {
 #ElementCanvas {
     background-color: var( --canvas-background-color );
     background-image: var( --canvas-background-image );
+    overflow: hidden !important;
 }
 
 

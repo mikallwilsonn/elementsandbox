@@ -5,6 +5,8 @@ import React, { Component } from 'react';
 
 // ----
 // Child Components
+import ColorControl from '../mixins/ColorControl';
+
 import ElementList from './ElementList';
 import BackgroundControls from './controls/BackgroundControls';
 import BorderControls from './controls/BorderControls';
@@ -59,17 +61,11 @@ class Sidebar extends Component {
 
                                     </div>
 
-                                    <div className="form-group text-theme-primary mt-3">
-                                        <label htmlFor="canvas-background-color">
-                                            Canvas Background Color
-                                        </label>
 
-                                        <input type="text" className="form-control element-control" id="canvas-background-color" name="canvas-background-color" aria-describedby="canvas-background-colorHelp" placeholder="" />
-
-                                        <small id="canvas-background-colorHelp" className="form-text text-muted mb-2">
-                                            Enter any valid CSS color value.
-                                        </small>
-                                    </div>
+                                    <ColorControl 
+                                        label="Canvas Background Color" 
+                                        styleName="canvas-background-color" 
+                                    />
 
 
                                     <div className="form-group text-theme-primary mt-3">

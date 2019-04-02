@@ -6,9 +6,10 @@ import React from 'react';
 // ----
 // Child Components
 import ControlGroup from '../../mixins/ControlGroup';
-import InputControl from '../../mixins/InputControl';
+// import InputControl from '../../mixins/InputControl';
 import ChoiceControl from '../../mixins/ChoiceControl';
 import RangeControl from '../../mixins/RangeControl';
+import ColorControl from '../../mixins/ColorControl';
 
 
 // ----
@@ -18,7 +19,7 @@ const TypographyControls = () => {
         <ControlGroup name="typography" label="Typography">
 
 
-            <InputControl 
+            <ColorControl 
                 label="Font Color" 
                 styleName="color" 
                 help="Enter any valid CSS color value."

@@ -9,6 +9,7 @@ import ControlGroup from '../../mixins/ControlGroup';
 import RangeControl from '../../mixins/RangeControl';
 import InputControl from '../../mixins/InputControl';
 import ChoiceControl from '../../mixins/ChoiceControl';
+import ColorControl from '../../mixins/ColorControl';
 
 
 // ----
@@ -34,10 +35,9 @@ const BorderControls = () => {
             />
 
 
-            <InputControl 
+            <ColorControl 
                 label="Border Color" 
                 styleName="border-color" 
-                help="Enter any valid CSS color value. Will inherit font color if left empty."
             />
 
 
