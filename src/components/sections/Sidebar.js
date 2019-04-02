@@ -26,7 +26,12 @@ class Sidebar extends Component {
 
     updateElementText( value ) {
         const element = document.querySelector( '#Element' );
-        element.textContent = value;
+        element.innerHTML = value;
+    }
+
+    updateElementCSS( value ) {
+        const style = document.querySelector( '#CustomStyles' );
+        style.innerHTML = value;
     }
 
     render() {
@@ -58,15 +63,17 @@ class Sidebar extends Component {
 
                                     <div className="form-group text-theme-primary mt-3">
                                         <label htmlFor="element-text-content">
-                                            Text Content
+                                            Element Inner Content
                                         </label>
 
-                                        <input type="text" className="form-control" id="element-text-content" name="element-text-content" aria-describedby="element-text-contentHelp" placeholder="" 
-                                            onChange={( event ) => this.updateElementText( event.target.value )}
-                                        />
+                                        <textarea
+                                            type="text" className="form-control" id="element-text-content" name="element-text-content" aria-describedby="element-text-contentHelp" placeholder="" 
+                                            onChange={( event ) => this.updateElementText( event.target.value )}></textarea>
 
+                                        <small id="element-text-contentHelp" className="form-text text-muted mb-2">
+                                            Accepts plain text or HTML.
+                                        </small>
                                     </div>
-
 
                                     <ColorControl 
                                         label="Canvas Background Color" 
@@ -102,6 +109,25 @@ class Sidebar extends Component {
                                         styleName="canvas-background-size" 
                                         options={['auto', 'cover', 'contain', 'initial', 'inherit' ]} 
                                     />
+
+                                    <div className="dropdown-divider mt-3 mb-3"></div>
+
+                                    <div className="form-group text-theme-primary mt-3">
+                                        <label htmlFor="element-text-content">
+                                            Custom CSS
+                                        </label>
+
+                                        <textarea
+                                            type="text" className="form-control" id="element-css-content" name="element-css-content" aria-describedby="element-css-contentHelp" placeholder="" 
+                                            onChange={( event ) => this.updateElementCSS( event.target.value )}></textarea>
+
+                                        <small id="element-css-contentHelp" className="form-text text-muted mb-2">
+                                            Enter your custom CSS styles. <br /><br />
+                                            You can select your element with <code>#Element</code> and the background "canvas" with <code>#ElementCanvas</code>. <br /><br />
+                                            It is also recommended that you use <code>.class</code> and/or <code>#id</code>'s to select your elements as you styles may interfere with other parts of the User Interface. <br /><br />
+                                            <strong>NOTE:</strong> Some or maybe ALL of your custom styles may not work unless you use <code>!important</code>.
+                                        </small>
+                                    </div>
 
                                 </div>
                             </div>
