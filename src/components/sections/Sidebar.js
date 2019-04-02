@@ -6,6 +6,8 @@ import React, { Component } from 'react';
 // ----
 // Child Components
 import ColorControl from '../mixins/ColorControl';
+import ImageControl from '../mixins/ImageControl';
+import ChoiceControl from '../mixins/ChoiceControl';
 
 import ElementList from './ElementList';
 import BackgroundControls from './controls/BackgroundControls';
@@ -67,18 +69,35 @@ class Sidebar extends Component {
                                         styleName="canvas-background-color" 
                                     />
 
+                                    <ImageControl 
+                                        label="Canvas Background Image" 
+                                        styleName="canvas-background-image" 
+                                        help="Enter a URL to your desired image."
+                                    />
 
-                                    <div className="form-group text-theme-primary mt-3">
-                                        <label htmlFor="canvas-background-image">
-                                            Canvas Background Image
-                                        </label>
+                                    <ChoiceControl 
+                                        label="Canvas Background Origin" 
+                                        styleName="canvas-background-origin" 
+                                        options={['border-box', 'padding-box', 'content-box', 'initial', 'inherit']} 
+                                    />
 
-                                        <input type="text" className="form-control element-control" id="canvas-background-image" name="canvas-background-image" aria-describedby="canvas-background-imageHelp" placeholder="" />
+                                    <ChoiceControl 
+                                        label="Canvas Background Position" 
+                                        styleName="canvas-background-position" 
+                                        options={['left top', 'left center', 'left bottom', 'right top', 'right center', 'right bottom', 'center top', 'center center', 'center bottom']} 
+                                    />
 
-                                        <small id="canvas-background-imageHelp" className="form-text text-muted mb-2">
-                                            Enter any valid image URL.
-                                        </small>
-                                    </div>
+                                    <ChoiceControl 
+                                        label="Canvas Background Repeat" 
+                                        styleName="canvas-background-repeat" 
+                                        options={['repeat', 'repeat-x', 'repeat-y', 'no-repeat', 'round', 'initial', 'inherit']} 
+                                    />
+
+                                    <ChoiceControl 
+                                        label="Canvas Background Size" 
+                                        styleName="canvas-background-size" 
+                                        options={['auto', 'cover', 'contain', 'initial', 'inherit' ]} 
+                                    />
 
                                 </div>
                             </div>

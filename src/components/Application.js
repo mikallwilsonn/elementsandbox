@@ -24,10 +24,20 @@ class Application extends Component {
         document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
     }
 
+    handleImageUpdate() {
+        document.documentElement.style.setProperty(`--${this.name}`, `url('${this.value}')`);
+    }
+
     componentDidMount() {
         const inputs = document.querySelectorAll( '.element-control' );
-        inputs.forEach( 
-            input => input.addEventListener( 'change', this.handleUpdate ));
+        inputs.forEach( input => {
+            if ( input.classList.contains( '.image-control' ) ) {
+                input.addEventListener( 'change', this.handleImageUpdate );
+            } else {
+                input.addEventListener( 'change', this.handleUpdate );
+            }
+            
+        });
 
         inputs.forEach( input => input.addEventListener( 'mousedown', function() {
             inputs.forEach( 
@@ -37,6 +47,11 @@ class Application extends Component {
         inputs.forEach( input => input.addEventListener( 'mouseup', function() {
             return;
         }));
+
+        const ImageInputs = document.querySelectorAll( '.image-control' );
+        ImageInputs.forEach( 
+            input => input.addEventListener( 'change', this.handleImageUpdate )
+        );
 
     }
 

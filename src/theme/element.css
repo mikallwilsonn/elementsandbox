@@ -2,9 +2,9 @@
     /* -- Background --*/
     --background-attachment: initial;
     --background-color: #1F90F8;
+    --background-image: url('');
     --background-blend-mode: normal;
     --background-clip: initial;
-    --background-image: url('');
     --background-origin: initial;
     --background-position: center center;
     --background-repeat: initial;
@@ -70,11 +70,10 @@
 
 #Element {
     /* -- Background -- */
-    background-color: var( --background-color );
+    background: var( --background-color) var( --background-image );
     background-attachment: var( --background-attachment );
     background-blend-mode: var( --background-blend-mode );
     background-clip: var( --background-clip );
-    background-image: var( --background-image );
     background-origin: var( --background-origin );
     background-position: var( --background-position );
     background-repeat: var( --background-repeat );

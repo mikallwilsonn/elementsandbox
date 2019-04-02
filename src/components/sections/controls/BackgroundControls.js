@@ -8,7 +8,7 @@ import React from 'react';
 import ControlGroup from '../../mixins/ControlGroup';
 // import RangeControl from '../../mixins/RangeControl';
 import ChoiceControl from '../../mixins/ChoiceControl';
-import InputControl from '../../mixins/InputControl';
+import ImageControl from '../../mixins/ImageControl';
 import ColorControl from '../../mixins/ColorControl';
 
 
@@ -41,7 +41,7 @@ const BackgroundControls = () => {
                 styleName="background-color" 
             />
 
-            <InputControl 
+            <ImageControl 
                 label="Background Image" 
                 styleName="background-image" 
                 help="Enter a URL to your desired image."
