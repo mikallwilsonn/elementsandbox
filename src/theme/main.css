@@ -9,6 +9,10 @@
 :root {
     --canvas-background-color: #FFF;
     --canvas-background-image: url( '' );
+    --canvas-background-origin: initial;
+    --canvas-background-position: center center;
+    --canvas-background-repeat: initial;
+    --canvas-background-size: initial;
 }
 
 /* ----
@@ -63,8 +67,11 @@ body, #root {
 ----------- ElementCanvas
 ---- */
 #ElementCanvas {
-    background-color: var( --canvas-background-color );
-    background-image: var( --canvas-background-image );
+    background: var( --canvas-background-color) var( --canvas-background-image );
+    background-origin: var( --canvas-background-origin );
+    background-position: var( --canvas-background-position );
+    background-repeat: var( --canvas-background-repeat );
+    background-size: var( --canvas-background-size );
     overflow: hidden !important;
 }
 
