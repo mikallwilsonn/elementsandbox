@@ -50,6 +50,13 @@
     --rotate: 0deg;
     --rotate-x: 0deg;
     --rotate-y:0deg;
+    --scale: 1;
+    --translateX: 0%;
+    --translateY: 0%;
+    --skewX: 0deg;
+    --skewY: 0deg;
+    --transform-origin-x: initial;
+    --transform-origin-y: initial;
 
 
     /* -- Typography -- */
@@ -119,7 +126,14 @@
     /* -- Transforms -- */
     transform: rotate( var( --rotate ))
         rotateY( var( --rotate-y ))
-        rotateX( var( --rotate-x ));
+        rotateX( var( --rotate-x ))
+        scale( var( --scale ))
+        translateX( var( --translateX ))
+        translateY( var( --translateY ))
+        skewX( var( --skewX )) 
+        skewY( var( --skewY ));
+
+    transform-origin: var( --transform-origin-x ) var( --transform-origin-y );
 
 
     /* -- Typography -- */

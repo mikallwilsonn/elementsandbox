@@ -10,10 +10,12 @@ import ImageControl from '../mixins/ImageControl';
 import ChoiceControl from '../mixins/ChoiceControl';
 
 import ElementList from './ElementList';
+
 import BackgroundControls from './controls/BackgroundControls';
 import BorderControls from './controls/BorderControls';
 import BoxModelControls from './controls/BoxModelControls';
 import TypographyControls from './controls/TypographyControls';
+import TransformControls from './controls/TransformControls';
 
 
 // ----
@@ -113,6 +115,7 @@ class Sidebar extends Component {
                         <BorderControls         />
                         <BoxModelControls       />
                         <TypographyControls     />
+                        <TransformControls      />
 
                     </div>
                 </div>
