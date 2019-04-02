@@ -8,6 +8,7 @@ import React from 'react';
 import ControlGroup from '../../mixins/ControlGroup';
 import InputControl from '../../mixins/InputControl';
 import ChoiceControl from '../../mixins/ChoiceControl';
+import RangeControl from '../../mixins/RangeControl';
 
 
 // ----
@@ -24,11 +25,14 @@ const TypographyControls = () => {
             />
 
 
-            <InputControl 
+            <RangeControl 
                 label="Font Size" 
                 styleName="font-size" 
-                help="Values calculated as px"
-                sizing="px"
+                min="0"
+                max="100" 
+                step="1"
+                sizing="px" 
+                value="0"
             />
 
 
@@ -67,26 +71,36 @@ const TypographyControls = () => {
             />
 
 
-            <InputControl 
+            <RangeControl 
                 label="Letter Spacing" 
                 styleName="letter-spacing" 
-                help="Values calculated as px"
-                sizing="px"
+                min="-50"
+                max="50" 
+                step="1"
+                sizing="px" 
+                value="0"
             />
 
 
-            <InputControl 
+            <RangeControl 
                 label="Line Height" 
                 styleName="line-height" 
-                help="Values calculated as px"
-                sizing="px"
+                min="-100"
+                max="100" 
+                step="1"
+                sizing="px" 
+                value="0"
             />
 
-            <InputControl 
+
+            <RangeControl 
                 label="Word Spacing" 
                 styleName="word-spacing" 
-                help="Values calculated as px"
-                sizing="px"
+                min="-50"
+                max="50" 
+                step="1"
+                sizing="px" 
+                value="0"
             />
 
 

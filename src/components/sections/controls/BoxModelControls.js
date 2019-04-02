@@ -27,6 +27,7 @@ const BoxModelControls = () => {
                             'table-row', 'none', 'initial', 'inherit']} 
             />
 
+
             <ChoiceControl 
                 label="Box Sizing" 
                 styleName="boz-sizing" 
@@ -34,18 +35,25 @@ const BoxModelControls = () => {
             />
 
 
-            <InputControl 
+            <RangeControl 
                 label="Height" 
                 styleName="height" 
-                help="Values calculated as px"
-                sizing="px"
+                min="0"
+                max="2500" 
+                step="1"
+                sizing="px" 
+                value="250"
             />
 
-            <InputControl 
+
+            <RangeControl 
                 label="Width" 
                 styleName="width" 
-                help="Values calculated as px"
-                sizing="px"
+                min="0"
+                max="2500" 
+                step="1"
+                sizing="px" 
+                value="250"
             />
 
 
@@ -65,7 +73,7 @@ const BoxModelControls = () => {
                 max="250" 
                 step="1"
                 sizing="px" 
-                value="0"
+                value="25"
             />
 
 

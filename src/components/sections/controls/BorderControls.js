@@ -17,13 +17,15 @@ const BorderControls = () => {
     return (
         <ControlGroup name="border" label="Border">
 
-            <InputControl 
+            <RangeControl 
                 label="Border Width" 
                 styleName="border-width" 
-                help="Values will be calculated as px."
-                sizing="px"
+                min="0"
+                max="100" 
+                step="1"
+                sizing="px" 
+                value="0"
             />
-
 
             <ChoiceControl 
                 label="Border Style" 
@@ -68,19 +70,25 @@ const BorderControls = () => {
             />
 
 
-            <InputControl 
+            <RangeControl 
                 label="Border Image Width" 
                 styleName="border-image-width" 
-                help="Values will be calculated as px."
-                sizing="px"
+                min="0"
+                max="100" 
+                step="1"
+                sizing="px" 
+                value="0"
             />
 
 
-            <InputControl 
+            <RangeControl 
                 label="Border Image Outset" 
                 styleName="border-image-outset" 
-                help="Values will be calculated as px."
-                sizing="px"
+                min="0"
+                max="100" 
+                step="1"
+                sizing="px" 
+                value="0"
             />
 
 

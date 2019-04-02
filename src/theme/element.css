@@ -13,7 +13,7 @@
 
     /* -- Border -- */
     --border-width: 0px;
-    --border-style: initial;
+    --border-style: solid;
     --boder-color: transparent;
     --border-radius: 0px;
     --border-image-source: none;
@@ -24,13 +24,13 @@
 
 
     /* -- Box Model -- */
-    --padding: 10px;
+    --padding: 25px;
     --margin: 0px;
     --display: inline-block;
     --opacity: 1;
     --position: initial;
-    --height: initial;
-    --width: initial;
+    --height: 250px;
+    --width: 250px;
     --box-sizing: initial;
     
 
