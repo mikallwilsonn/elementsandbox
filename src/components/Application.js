@@ -30,6 +30,7 @@ class Application extends Component {
 
     componentDidMount() {
         const inputs = document.querySelectorAll( '.element-control' );
+        
         inputs.forEach( input => {
             if ( input.classList.contains( '.image-control' ) ) {
                 input.addEventListener( 'change', this.handleImageUpdate );
@@ -39,16 +40,9 @@ class Application extends Component {
             
         });
 
-        inputs.forEach( input => input.addEventListener( 'mousedown', function() {
-            inputs.forEach( 
-                input => input.addEventListener( 'mousemove', this.handleUpdate ));
-        }));
-
-        inputs.forEach( input => input.addEventListener( 'mouseup', function() {
-            return;
-        }));
 
         const ImageInputs = document.querySelectorAll( '.image-control' );
+
         ImageInputs.forEach( 
             input => input.addEventListener( 'change', this.handleImageUpdate )
         );
