@@ -19,8 +19,8 @@ class ControlGroup extends Component {
                     </h2>
                 </div>
             
-                <div id={`${name}Controls`} className="collapse" aria-labelledby={`${name}Heading`} data-parent="#controls">
-                    <div className="card-body">
+                <div id={`${name}Controls`} className="collapse rounded-lg" aria-labelledby={`${name}Heading`} data-parent="#controls">
+                    <div className="card-body rounded-lg">
 
                         {this.props.children}
     .

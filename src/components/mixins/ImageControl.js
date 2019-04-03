@@ -15,7 +15,8 @@ const ImageControl = ({ label, styleName, help, sizing }) => {
 
             {help ?
                 <small id={`${styleName}Help`} className="form-text text-muted mb-2">
-                    {help} Don't have an image? You can use <code>https://picsum.photos/500/500/?random</code> to generate a random image.
+                    {help} <br /> 
+                    Don't have an image? You can use <code>https://picsum.photos/500/500/?random</code> to generate a random image.
                 </small>
              : ''}
 
