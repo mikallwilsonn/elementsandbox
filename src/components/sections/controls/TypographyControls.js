@@ -50,28 +50,28 @@ const TypographyControls = () => {
             <ChoiceControl 
                 label="Font Style" 
                 styleName="font-style" 
-                options={['normal', 'italic', 'oblique', 'initial', 'inherit']} 
+                options={[ 'normal', 'italic', 'oblique', 'initial' ]} 
             />
 
 
             <ChoiceControl 
                 label="Font Variant" 
                 styleName="font-variant" 
-                options={['normal', 'small-caps', 'initial', 'inherit']} 
+                options={[ 'normal', 'small-caps', 'initial' ]} 
             />
 
 
             <ChoiceControl 
                 label="Font Weight" 
                 styleName="font-weight" 
-                options={['normal', 'bold', 'bolder', 'lighter', 'initial', 'inherit']} 
+                options={[ 'normal', 'bold', 'bolder', 'lighter', 'initial' ]} 
             />
 
 
             <ChoiceControl 
                 label="Text Alignment" 
                 styleName="text-align" 
-                options={['left', 'right', 'center', 'justify', 'initial', 'inherit']} 
+                options={[ 'left', 'right', 'center', 'justify', 'initial' ]} 
             />
 
 
@@ -114,7 +114,7 @@ const TypographyControls = () => {
             <ChoiceControl 
                 label="Font Kerning" 
                 styleName="text-align" 
-                options={['auto', 'normal', 'none']} 
+                options={[ 'auto', 'normal', 'none' ]} 
             />
 
 

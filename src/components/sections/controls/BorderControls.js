@@ -32,7 +32,7 @@ const BorderControls = () => {
             <ChoiceControl 
                 label="Border Style" 
                 styleName="border-style" 
-                options={['none', 'hidden', 'dotted', 'dashed', 'solid', 'double', 'groove','ridge', 'inset', 'outset', 'initial', 'inherit']} 
+                options={[ 'none', 'hidden', 'dotted', 'dashed', 'solid', 'double', 'groove','ridge', 'inset', 'outset', 'initial' ]} 
             />
 
 
@@ -99,7 +99,7 @@ const BorderControls = () => {
             <ChoiceControl 
                 label="Border Image Repeat" 
                 styleName="border-image-repeat" 
-                options={['stretch', 'repeat', 'round', 'initial', 'inherit']} 
+                options={[ 'stretch', 'repeat', 'round', 'initial' ]} 
             />
 
 

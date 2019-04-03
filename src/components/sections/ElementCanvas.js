@@ -11,7 +11,7 @@ class ElementCanvas extends Component {
             <section id="ElementCanvas" className="col-lg-9 m-0 p-0 row justify-content-center align-items-center">
 
                 <div id="Element">
-                    Hey here's your element!
+                    Hey, here's your element!
                 </div>
 
             </section>

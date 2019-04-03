@@ -15,23 +15,23 @@ import RangeControl from '../../mixins/RangeControl';
 // BackgroundControls
 const BoxModelControls = () => {
     return (
-        <ControlGroup name="box-model" label="Box Model">
+        <ControlGroup name="dimensions" label="Dimensions &amp; Display">
 
             <ChoiceControl 
                 label="Display" 
                 styleName="display" 
-                options={['inline', 'block', 'flex', 'grid', 'inline-block', 'inline-flex',
+                options={[ 'inline', 'block', 'flex', 'grid', 'inline-block', 'inline-flex',
                             'inline-grid', 'inline-table', 'list-item', 'run-in',
                             'table', 'table-caption', 'table-column-group', 'table-header-group',
                             'table-footer-group', 'table-row-group', 'table-cell', 'table-column',
-                            'table-row', 'none', 'initial', 'inherit']} 
+                            'table-row', 'none', 'initial' ]} 
             />
 
 
             <ChoiceControl 
                 label="Box Sizing" 
                 styleName="boz-sizing" 
-                options={['content-box', 'border-box', 'initial', 'inherit']} 
+                options={[ 'content-box', 'border-box', 'initial' ]} 
             />
 
 
@@ -97,8 +97,8 @@ const BoxModelControls = () => {
             <ChoiceControl 
                 label="Position" 
                 styleName="position" 
-                options={['static', 'absolute', 'fixed', 'relative',
-                    'sticky', 'initial', 'inherit']} 
+                options={[ 'static', 'absolute', 'fixed', 'relative',
+                    'sticky', 'initial' ]} 
             />
 
 

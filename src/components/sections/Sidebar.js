@@ -14,7 +14,7 @@ import ElementList from './ElementList';
 
 import BackgroundControls from './controls/BackgroundControls';
 import BorderControls from './controls/BorderControls';
-import BoxModelControls from './controls/BoxModelControls';
+import DimensionControls from './controls/DimensionControls';
 import TypographyControls from './controls/TypographyControls';
 import TransformControls from './controls/TransformControls';
 import EffectsControls from './controls/EffectsControls';
@@ -46,18 +46,18 @@ class Sidebar extends Component {
                 <div className="col-lg-12 mt-5 d-flex flex-column">
 
                     
-                    <div className="accordion" id="canvasSettings">
-                        <div className="card border-0">
+                    <div className="accordion rounded-lg" id="canvasSettings">
+                        <div className="card border-0 rounded-lg">
                             <div className="card-header p-0 text-left bg-secondary" id="headingOne">
-                            <h2 className="mb-0 p-0">
-                                <button className="btn btn-link control-toggle text-white m-0 p-3 h-100 w-100 text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Canvas Settings
-                                </button>
-                            </h2>
+                                <h2 className="mb-0 p-0">
+                                    <button className="btn btn-link control-toggle text-white m-0 p-3 h-100 w-100 text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Canvas &amp; Element Settings
+                                    </button>
+                                </h2>
                             </div>
 
-                            <div id="collapseOne" className="collapse" aria-labelledby="headingOne" data-parent="#canvasSettings">
-                                <div className="card-body">
+                            <div id="collapseOne" className="collapse rounded-lg" aria-labelledby="headingOne" data-parent="#canvasSettings">
+                                <div className="card-body rounded-lg">
 
                                     <ElementList />
 
@@ -68,13 +68,18 @@ class Sidebar extends Component {
                                         </label>
 
                                         <textarea
-                                            type="text" className="form-control" id="element-text-content" name="element-text-content" aria-describedby="element-text-contentHelp" placeholder="" 
-                                            onChange={( event ) => this.updateElementText( event.target.value )}></textarea>
+                                            type="text" className="form-control code-input" id="element-text-content" name="element-text-content" aria-describedby="element-text-contentHelp" placeholder="" 
+                                            onChange={( event ) => this.updateElementText( event.target.value )}>
+                                                Hey, here's your element!
+                                            </textarea>
 
                                         <small id="element-text-contentHelp" className="form-text text-muted mb-2">
-                                            Accepts plain text or HTML.
+                                            Accepts plain text or custom HTML. <br /><br />
+                                            <strong>NOTE:</strong> Custom HTML may not be affected by the styles you set by the controls here in the app.
                                         </small>
                                     </div>
+
+                                    <div className="dropdown-divider mt-3 mb-3"></div>
 
                                     <ColorControl 
                                         label="Canvas Background Color" 
@@ -119,14 +124,14 @@ class Sidebar extends Component {
                                         </label>
 
                                         <textarea
-                                            type="text" className="form-control" id="element-css-content" name="element-css-content" aria-describedby="element-css-contentHelp" placeholder="" 
+                                            type="text" className="form-control code-input" id="element-css-content" name="element-css-content" aria-describedby="element-css-contentHelp" placeholder="" 
                                             onChange={( event ) => this.updateElementCSS( event.target.value )}></textarea>
 
                                         <small id="element-css-contentHelp" className="form-text text-muted mb-2">
                                             Enter your custom CSS styles. <br /><br />
                                             You can select your element with <code>#Element</code> and the background "canvas" with <code>#ElementCanvas</code>. <br /><br />
                                             It is also recommended that you use <code>.class</code> and/or <code>#id</code>'s to select your elements as you styles may interfere with other parts of the User Interface. <br /><br />
-                                            <strong>NOTE:</strong> Some or maybe ALL of your custom styles may not work unless you use <code>!important</code>.
+                                            <strong>NOTE:</strong> Some or <em>ALL</em> of your custom styles may not work unless you use <code>!important</code>.
                                         </small>
                                     </div>
 
@@ -142,7 +147,7 @@ class Sidebar extends Component {
 
                         <BackgroundControls     />
                         <BorderControls         />
-                        <BoxModelControls       />
+                        <DimensionControls       />
                         <EffectsControls        />
                         <ShadowControls         />
                         <TransformControls      />
