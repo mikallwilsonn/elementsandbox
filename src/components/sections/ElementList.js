@@ -16,7 +16,7 @@ class ElementList extends Component {
         elementGenerator.addEventListener( 'change', function(){
             // Remove current element from page
             let prevElement = document.querySelector( "#Element" );
-            let prevElementText = prevElement.textContent;
+            let prevElementText = prevElement.innerHTML;
             prevElement.parentNode.removeChild( prevElement );
 
             // Get value of select menu
@@ -30,7 +30,7 @@ class ElementList extends Component {
             // After new element is appendeed set it's inner text
             let appendedElement = document.querySelector( "#Element" );
             let text = document.querySelector( '#element-text-content' ).value;
-            appendedElement.textContent = text || prevElementText;
+            appendedElement.innerHTML = text || prevElementText;
 
         }, false );
     }

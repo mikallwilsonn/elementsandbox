@@ -1,8 +1,9 @@
 // ----
 // Dependencies
 import { combineReducers } from 'redux';
+import currentElementReducer from './currentElementReducer';
 
 
 export default combineReducers({
-    thing: 'this'
+    currentElement: currentElementReducer
 });
