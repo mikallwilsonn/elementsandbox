@@ -13,7 +13,7 @@ const ChoiceControl = ({ label, styleName, options, help }) => {
             <select 
                 className="form-control element-control" 
                 name={styleName}
-                id={styleName}
+                id={styleName} 
             >
                 <option disabled defaultValue selected className="text-muted">
                     Default / Initial
