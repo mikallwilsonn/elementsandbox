@@ -29,6 +29,9 @@ class Application extends Component {
     }
 
     componentDidMount() {
+
+        this.props.setCurrentElement( 'div' );
+
         const inputs = document.querySelectorAll( '.element-control' );
         
         inputs.forEach( input => {
