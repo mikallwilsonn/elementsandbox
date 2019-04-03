@@ -39,7 +39,7 @@ class Sidebar extends Component {
         return (
             <section id="Sidebar" className="col-lg-3 m-0 p-2 bg-theme-black text-white">
                 <header className="text-center p-3">
-                    <h1 className="h3">Markup Sandbox</h1>
+                    <h1 className="h3">ElementSandbox</h1>
                     <span className="text-muted">Created by <a href="https://github.com/mikallwilsonn/" className="text-theme-primary" target="_blank" rel="noopener noreferrer">Michael R. Wilson</a></span>
                 </header>
 
