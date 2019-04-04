@@ -13,7 +13,7 @@ class ControlGroup extends Component {
             <div className="card border-0">
                 <div className="card-header p-0 text-left bg-secondary" id={`${name}Heading`}>
                     <h2 className="mb-0 p-0">
-                        <button className="btn btn-link control-toggle text-light m-0 p-3 h-100 w-100 text-left" type="button" data-toggle="collapse" data-target={`#${name}Controls`} aria-expanded="true" aria-controls={`${name}Controls`}>
+                        <button className="btn btn-link control-toggle text-light m-0 p-3 h-100 w-100 text-left font-medium" type="button" data-toggle="collapse" data-target={`#${name}Controls`} aria-expanded="true" aria-controls={`${name}Controls`}>
                             {label}
                         </button>
                     </h2>

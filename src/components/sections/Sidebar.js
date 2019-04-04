@@ -39,8 +39,8 @@ class Sidebar extends Component {
         return (
             <section id="Sidebar" className="col-lg-3 m-0 p-2 bg-theme-black text-white">
                 <header className="text-center p-3">
-                    <h1 className="h3">ElementSandbox</h1>
-                    <span className="text-muted">Created by <a href="https://github.com/mikallwilsonn/" className="text-theme-primary" target="_blank" rel="noopener noreferrer">Michael R. Wilson</a></span>
+                    <h1 className="h3 font-bold">ElementSandbox</h1>
+                    <span className="text-muted font-medium">Created by <a href="https://github.com/mikallwilsonn/" className="text-theme-primary font-bold" target="_blank" rel="noopener noreferrer">Michael R. Wilson</a></span>
                 </header>
 
                 <div className="col-lg-12 mt-5 d-flex flex-column">
@@ -50,7 +50,7 @@ class Sidebar extends Component {
                         <div className="card border-0 rounded-lg">
                             <div className="card-header p-0 text-left bg-secondary" id="headingOne">
                                 <h2 className="mb-0 p-0">
-                                    <button className="btn btn-link control-toggle text-white m-0 p-3 h-100 w-100 text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <button className="btn btn-link control-toggle text-white m-0 p-3 h-100 w-100 text-left font-medium" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                         Canvas &amp; Element Settings
                                     </button>
                                 </h2>
@@ -69,8 +69,9 @@ class Sidebar extends Component {
 
                                         <textarea
                                             type="text" className="form-control code-input" id="element-text-content" name="element-text-content" aria-describedby="element-text-contentHelp" placeholder="" 
-                                            onChange={( event ) => this.updateElementText( event.target.value )}>
-                                                Hey, here's your element!
+                                            onChange={( event ) => this.updateElementText( event.target.value )}
+                                            defaultValue="Hey, here's your element!">
+                                                
                                             </textarea>
 
                                         <small id="element-text-contentHelp" className="form-text text-muted mb-2">

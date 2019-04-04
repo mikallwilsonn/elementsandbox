@@ -58,7 +58,7 @@ class Application extends Component {
                 <Sidebar        />
                 <ElementCanvas  />
 
-                <div className="alert alert-dark mobile-notice" role="alert">
+                <div className="alert alert-dark mobile-notice font-medium" role="alert">
                     For the best experience, it is recommended to use this on desktop.
 
                     <button type="button" className="close ml-3" data-dismiss="alert" aria-label="Close">

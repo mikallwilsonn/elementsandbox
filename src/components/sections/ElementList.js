@@ -64,7 +64,7 @@ class ElementList extends Component {
                     className="form-control" 
                     defaultValue=''
                 >
-                    <option disabled selected value=''>Choose An Element</option>
+                    <option disabled value=''>Choose An Element</option>
 
                     {this.renderOptions()}
                 </select>

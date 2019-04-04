@@ -7,15 +7,16 @@ import React from 'react';
 const ChoiceControl = ({ label, styleName, options, help }) => {
     return (
         <div className="form-group mt-2 pt-1 pb-1">
-            <label htmlFor={styleName} className="text-theme-primary">
+            <label htmlFor={styleName} className="text-theme-primary font-medium">
                 {label}
             </label>
             <select 
                 className="form-control element-control" 
                 name={styleName}
                 id={styleName} 
+                defaultValue=''
             >
-                <option disabled defaultValue selected className="text-muted">
+                <option disabled value='' className="text-muted">
                     Default / Initial
                 </option>
 

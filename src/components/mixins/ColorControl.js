@@ -7,7 +7,7 @@ import React from 'react';
 const ColorControl = ({ label, styleName, help, }) => {
     return (
         <div className="form-group text-theme-primary mt-2 pt-1 pb-1">
-            <label htmlFor={styleName}>
+            <label htmlFor={styleName} className="text-theme-primary font-medium">
                 {label}
             </label>
 
