@@ -27,4 +27,4 @@
 .font-light { font-family: 'Quicksand-Light'; }
 .font-regular { font-family: 'Quicksand-Regular'; }
 .font-medium { font-family: 'Quicksand-Medium'; }
-.font-bold { font-family: 'Quicksand-Bold'; }
+.font-bold, strong { font-family: 'Quicksand-Bold'; }
