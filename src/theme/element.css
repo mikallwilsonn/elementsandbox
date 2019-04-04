@@ -29,8 +29,8 @@
     --display: inline-block;
     --opacity: 1;
     --position: initial;
-    --height: 25%;
-    --width: 25%;
+    --height: auto;
+    --width: auto;
     --box-sizing: initial;
     
 
@@ -88,7 +88,7 @@
     --letter-spacing: initial;
     --word-spacing: initial;
     --text-align: initial;
-    --font-family: initial;
+    --font-family: sans-serif !important;
     --font-kerning: auto;
 
 }
@@ -192,7 +192,7 @@
     line-height: var( --line-height );
     letter-spacing: var( --letter-spacing );
     word-spacing: var( --word-spacing );
-    font-family: var( --font-family );
+    font-family: var( --font-family ) !important;
     font-kerning: var( --font-kerning );
 
     transition:0.1s;

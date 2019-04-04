@@ -7,7 +7,7 @@ import React from 'react';
 const RangeControl = ({ label, styleName, min = 0, max, step = 1, sizing, value = 0, help }) => {
     return (
         <div className="form-group mt-2 pt-1 pb-1">
-            <label htmlFor={styleName} className="text-theme-primary">
+            <label htmlFor={styleName} className="text-theme-primary font-medium">
                 {label}
             </label>
             <input 
@@ -20,7 +20,7 @@ const RangeControl = ({ label, styleName, min = 0, max, step = 1, sizing, value 
                 max={max}
                 step={step} 
                 data-sizing={sizing} 
-                onChange={() => console.log( `changing ${styleName}` )}
+                //onChange={() => console.log( `changing ${styleName}` )}
             />
             {help ?
                 <small id={`${styleName}Help`} class="form-text text-muted mb-3">

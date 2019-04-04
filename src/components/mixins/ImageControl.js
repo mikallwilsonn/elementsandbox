@@ -6,8 +6,8 @@ import React from 'react';
 // Control
 const ImageControl = ({ label, styleName, help, sizing }) => {
     return (
-        <div className="form-group text-theme-primary mt-2 pt-1 pb-1">
-            <label htmlFor={styleName}>
+        <div className="form-group mt-2 pt-1 pb-1">
+            <label htmlFor={styleName} className="text-theme-primary font-medium">
                 {label}
             </label>
 
