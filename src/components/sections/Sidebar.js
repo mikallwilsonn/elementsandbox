@@ -45,42 +45,19 @@ class Sidebar extends Component {
 
                 <div className="col-lg-12 mt-5 d-flex flex-column">
 
-                    
+                    <h2 className="h6 text-theme-primary">Settings</h2>
                     <div className="accordion rounded-lg" id="canvasSettings">
-                        <div className="card border-0 rounded-lg">
+                        <div className="card border-0">
                             <div className="card-header p-0 text-left bg-secondary" id="headingOne">
                                 <h2 className="mb-0 p-0">
                                     <button className="btn btn-link control-toggle text-white m-0 p-3 h-100 w-100 text-left font-medium" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        Canvas &amp; Element Settings
+                                        Canvas Settings
                                     </button>
                                 </h2>
                             </div>
 
                             <div id="collapseOne" className="collapse rounded-lg" aria-labelledby="headingOne" data-parent="#canvasSettings">
                                 <div className="card-body rounded-lg">
-
-                                    <ElementList />
-
-
-                                    <div className="form-group text-theme-primary mt-3">
-                                        <label htmlFor="element-text-content">
-                                            Element Inner Content
-                                        </label>
-
-                                        <textarea
-                                            type="text" className="form-control code-input" id="element-text-content" name="element-text-content" aria-describedby="element-text-contentHelp" placeholder="" 
-                                            onChange={( event ) => this.updateElementText( event.target.value )}
-                                            defaultValue="Hey, here's your element!">
-                                                
-                                            </textarea>
-
-                                        <small id="element-text-contentHelp" className="form-text text-muted mb-2">
-                                            Accepts plain text or custom HTML. <br /><br />
-                                            <strong>NOTE:</strong> Custom HTML may not be affected by the styles you set by the controls here in the app.
-                                        </small>
-                                    </div>
-
-                                    <div className="dropdown-divider mt-3 mb-3"></div>
 
                                     <ColorControl 
                                         label="Canvas Background Color" 
@@ -116,6 +93,43 @@ class Sidebar extends Component {
                                         styleName="canvas-background-size" 
                                         options={['auto', 'cover', 'contain', 'initial', 'inherit' ]} 
                                     />
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div className="card border-0">
+                            <div className="card-header p-0 text-left bg-secondary" id="headingOne">
+                                <h2 className="mb-0 p-0">
+                                    <button className="btn btn-link control-toggle text-white m-0 p-3 h-100 w-100 text-left font-medium" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                        Element Settings
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="collapseTwo" className="collapse rounded-lg" aria-labelledby="headingOne" data-parent="#canvasSettings">
+                                <div className="card-body rounded-lg">
+
+                                    <ElementList />
+
+
+                                    <div className="form-group text-theme-primary mt-3">
+                                        <label htmlFor="element-text-content">
+                                            Element Inner Content
+                                        </label>
+
+                                        <textarea
+                                            type="text" className="form-control code-input" id="element-text-content" name="element-text-content" aria-describedby="element-text-contentHelp" placeholder="" 
+                                            onChange={( event ) => this.updateElementText( event.target.value )}
+                                            defaultValue="Hey, here's your element!">
+                                                
+                                            </textarea>
+
+                                        <small id="element-text-contentHelp" className="form-text text-muted mb-2">
+                                            Accepts plain text or custom HTML. <br /><br />
+                                            <strong>NOTE:</strong> Custom HTML may not be affected by the styles you set by the controls here in the app.
+                                        </small>
+                                    </div>
 
                                     <div className="dropdown-divider mt-3 mb-3"></div>
 
@@ -139,6 +153,8 @@ class Sidebar extends Component {
                                 </div>
                             </div>
                         </div>
+
+
                     </div>
 
                     <br />

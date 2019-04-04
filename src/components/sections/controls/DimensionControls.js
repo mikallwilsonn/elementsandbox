@@ -29,6 +29,14 @@ const BoxModelControls = () => {
 
 
             <ChoiceControl 
+                label="Position" 
+                styleName="position" 
+                options={[ 'static', 'absolute', 'fixed', 'relative',
+                    'sticky', 'initial' ]} 
+            />
+
+
+            <ChoiceControl 
                 label="Box Sizing" 
                 styleName="boz-sizing" 
                 options={[ 'content-box', 'border-box', 'initial' ]} 
@@ -89,18 +97,6 @@ const BoxModelControls = () => {
                 sizing="px" 
                 value="0"
             />
-
-
-            <div className="dropdown-divider mt-4 mb-4"></div>
-
-
-            <ChoiceControl 
-                label="Position" 
-                styleName="position" 
-                options={[ 'static', 'absolute', 'fixed', 'relative',
-                    'sticky', 'initial' ]} 
-            />
-
 
         </ControlGroup>
     );

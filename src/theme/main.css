@@ -53,6 +53,12 @@ select:hover, select:focus, select:active {
     border: 1px solid var(--dark) !important;
 }
 
+
+code {
+    font-family: monospace !important;
+    font-size:1rem !important;
+}
+
 /* ----
 ----------- Sidebar
 ---- */
