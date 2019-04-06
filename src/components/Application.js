@@ -58,13 +58,29 @@ class Application extends Component {
                 <Sidebar        />
                 <ElementCanvas  />
 
-                <div className="alert alert-dark mobile-notice font-medium" role="alert">
-                    For the best experience, it is recommended to use this on desktop.
+                <div className="notices m-0 p-2 col-lg-12 d-flex flex-column align-items-center">
+                    <div className="alert alert-dark mobile-notice font-medium row justify-conent-between align-items-center" role="alert">
+                        <span>
+                            For the best experience, it is recommended to use this on desktop.
+                        </span>
+                        
 
-                    <button type="button" className="close ml-3" data-dismiss="alert" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+                        <button type="button" className="close ml-3" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <div className="alert m-0 alert-primary demo-notice font-medium row justify-conent-between align-items-center" role="alert">
+                        <span className="col-auto">
+                            This app is still in a beta-like stage and is purely for demo purposes at this point. Some controls and settings may not work as intended.
+                        </span>
+
+                        <button type="button" className="col-auto close ml-3" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">I Understand</span>
+                        </button>
+                    </div>
                 </div>
+
             </div>
         );
     }
